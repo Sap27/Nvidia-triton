@@ -12,7 +12,11 @@ docker run --rm \ -gpus all
   tritonserver --model-repository=/models
 ```
 ## 2. Client set up
-Once the triton server is running , the client_script.py can be used to interact with the Silero-VAD model
+Once the triton server is running , the client_script.py can be used to interact with the Silero-VAD model. The required packages can be installed using
+```bash
+
+pip install requirements.txt
+```
 ```bash
 
 python client.py --audio_file path/to/audio.wav
